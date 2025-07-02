@@ -1,0 +1,257 @@
+@font-face { font-family: Lato; src: url("Lato-Regular.ttf"); }
+@font-face { font-family: Upheaval; src: url("UpheavalPro.ttf"); }
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: Lato;
+  background-image: url(assets/images/background-sequence.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+header {
+  text-align: center;
+  background-image: url(assets/gifs/header.gif);
+  box-shadow: 0 4px 12px rgb(14, 13, 13);
+  opacity: 95%;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+}
+#headername {
+  font-family: Upheaval;
+  color: white;
+  text-shadow: 2px 2px 8px #00000071;
+  text-align: center;
+  font-size: 60px;
+}
+#headericon {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+#Artwork {
+  text-align: center;
+}
+#Awards {
+  text-align: center;
+}
+#Contact img {
+  padding: 1%;
+}
+#thumbnail {
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 4px 12px rgb(14, 13, 13);
+}
+#logo {
+  width: 60px;
+  height: 60px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 40px;
+}
+.game {
+  background: #ffffff50;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgb(97, 95, 95);
+  padding: 40px;
+  text-align: left;
+  -webkit-text-fill-color: #fff;
+  width: 450px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.tag {
+  background: #ffffff50;
+  box-shadow: 0 4px 12px rgb(14, 13, 13);
+  border-radius: 15px;
+  padding: 4px;
+  margin: 8px;
+  text-align: center;
+  -webkit-text-fill-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 40%;
+}
+.award {
+  background: #ffffff50;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgb(97, 95, 95);
+  padding: 40px;
+  text-align: left;
+  -webkit-text-fill-color: #000000;
+  width: 450px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.game:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px white;
+}
+.award:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px white;
+}
+.game img {
+  width: 150px;
+  height: 150px;
+  border-radius: 30%;
+  object-fit: cover;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.award button {
+  margin-top: 10px;
+  background: #3b8d54;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+.game button {
+  margin-top: 10px;
+  background: #3b8d54;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+.game h3 {
+  padding-bottom: 5%;
+}
+.game h4 ul {
+  padding-bottom: 15%;
+}
+.image-link {
+  width: 150px;
+  height: 150px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.image-link:hover{
+  transform: translateY(-4px);
+}
+.game button:hover {
+  background: #24a518;
+}
+.award button:hover {
+  background: #24a518;
+}
+#gameawards {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+#Proyectos {
+  align-content: center;
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+section {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 100px;
+}
+.inline-block {
+  display: inline-block;
+  width: 100%;
+ }
+ .inline-block img {
+  float: left;
+ }
+ .inline-header p {
+  float: left;
+ }
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
