@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,60 +8,84 @@
     <script src="script.js"></script>
     <title>Gemu Meika</title>
 </head>
-<body>
+<body> <!-- NOTE: Mostly all text shown in html native is placeholder only. the translate system below the body will correct with the registered text on language load or change -->
     <header>
         <div id="header" class="inline-header">
-            <p id="headername">Gemu Meika </p>
+            <p id="headername">Gemu Meika</p>
             <div style="margin: auto; text-align: right;">
-                <a id="headericon" href="#Home"><img style="width: 50px;" src="assets/icons/icons_home-b.png" alt="home"></a>
-                <a id="headericon" href="#About"><img style="width: 50px;" src="assets/icons/icon_about-c.png" alt="about"></a>
-                <a id="headericon" href="#Games"><img style="width: 50px;" src="assets/icons/icon_games.png" alt="games"></a>
-                <a id="headericon" href="#Artwork"><img style="width: 50px;" src="assets/icons/icon_artworks-b.png" alt=""></a>
-                <a id="headericon" href="#Awards"><img style="width: 50px;" src="assets/icons/icon_awards-b.png" alt="awards"></a>
-                <a id="headericon" href="#Contact"><img style="width: 50px;" src="assets/icons/icon_contact.png" alt="contact"></a>
+                <a id="headericon" href="#Home"><img style="width: 40px;" src="assets/icons/icons_home-b.png" alt="home"></a>
+                <a id="headericon" href="#About"><img style="width: 40px;" src="assets/icons/icon_about-c.png" alt="about"></a>
+                <a id="headericon" href="#Games"><img style="width: 40px;" src="assets/icons/icon_games.png" alt="games"></a>
+                <a id="headericon" href="#Artwork"><img style="width: 40px;" src="assets/icons/icon_artworks-b.png" alt=""></a>
+                <a id="headericon" href="#Awards"><img style="width: 40px;" src="assets/icons/icon_awards-b.png" alt="awards"></a>
+                <a id="headericon" href="#Contact"><img style="width: 40px;" src="assets/icons/icon_contact.png" alt="contact"></a>
+                <div style="float:right; padding-left: 1%;" class="dropdown">
+                    <button id="headericon"><img style="width: 40px;" src="assets/icons/icon_translate.png" alt="translate"></button>
+                    <div class="langwrap">
+                        <a id="headericon" href="#" language='spanish'>
+                            <img style="width: 50px; padding: 5%;" src="assets/icons/icons_lang_es.png" alt="Español">
+                        </a>
+                        <a id="headericon" href="#" language='english' class="active">
+                            <img style="width: 50px; padding: 5%;" src="assets/icons/icons_lang_en.png" alt="English">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
+    <div id="desktopModeMessage">
+        <h2>You're in Desktop Mode</h2>
+        <p>It seems you are using Desktop Mode while on using a Mobile Device. This may cause some visual artifacts. To fix this, disable the "Use Desktop Site" option on your browser</p>
+    </div>
     <section id="Home">
         <div style="padding-left: 5%; padding-right: 5%;" class="inline-block">
-            <img style="border-radius: 60%;padding-left: 100px; padding-top: 100px; padding-right: 100px;" src="assets/images/profile_gemumeika.jpg" alt="gemumeika">
-            <h2 id="headername" style="text-align: right; padding-right: 100px; padding-top: 15%; box-shadow: 100%;">Gemu Meika</h2>
-            <h3 style="text-align: right; padding-right: 100px;">Virtual Reality and Digital Games Design Engineering Student</h3>
+            <img style="border-radius: 60%; padding-left: 100px; padding-top: 100px; padding-bottom: 20px; float: right;" src="assets/images/profile_gemumeika.jpg" alt="gemumeika">
+            <br>
+            <h2 id="headername" style="text-align: right; padding-top: 15%; box-shadow: 100%;">Gemu Meika</h2>
+            <h4 style="text-align: right;">Felipe Cañas Trincado</h4>
+            <br>
+            <h3 class="lang_academictitle" style="text-align: right;">Virtual Reality and Digital Games Design Engineering Student</h3>
         </div>
     </section>
-    <section style="background-color: rgba(255, 255, 255, 0.349); padding-left: 10%; padding-right: 10%;" id="About">
+    <section style="background-color: rgba(255, 255, 255, 0.438); padding-left: 10%; padding-right: 10%;" id="About">
         <div style="padding-top: 2%;">
-            <h2 style="font-size: 40px; padding-bottom: 1%;">About Me</h2>
-            <p>Hi, I m Felipe Cañas, Game Designer and Generalist from Chile.
+            <h2 class="lang_headerAboutMe" style="font-size: 40px; padding-bottom: 1%;">About Me</h2>
+            <p class="lang_about">Hi, I'm Felipe Cañas Trincado, a Chilean Game Design student and Generalist.
             I started making and publishing my own games when I was 13 Years old, building passion for designing and creating entertainment through videogames.
-            At 20 years old, I started studying in the Virtual Reality and Digital Games Program from Universidad Bernardo O Higgins,
+            At 20 years old, I started studying in the Virtual Reality and Digital Games Engineering Program from Universidad Bernardo O'Higgins,
             and once I decided Making games is my life passion, I didn't stop there.
             I joined various events, game jams, and conferences about videogames, really getting into the medium, and continuing to expand on knowledge and experience.
             Here you can visit my greatest projects to date. If you like something, feel free to contact me so we can have some business talk.</p>
         </div>
-        <div style="padding-bottom: 2%;">
-            <h2 style="padding-top: 1%; padding-bottom: 1%;">My Progress</h2>
+        <br>
+        <div style="padding-bottom: 4%;">
+            <h2 class="lang_headerMyProgress" style="padding-top: 1%; padding-bottom: 1%;">My Progress</h2>
             <ul>
                 <h3>2022</h3>
-                <li>Started Career at Universidad Bernardo O higgins</li>
+                <li class="lang_progressList01">Started Career at Universidad Bernardo O higgins</li>
+                <br>
                 <h3>2023</h3>
-                <li>Game Exhibition at ExpoGame</li>
+                <li class="lang_progressList02">Game Exhibition at ExpoGame</li>
+                <br>
                 <h3>2024</h3>
-                <li>Participation in Global Game Jam</li>
-                <li>1st Place Winning in Social Impact Game Jam</li>
-                <li>Worked at GymBro: Idle Clicker, as Background Artist</li>
-                <li>Worked at CienArt Studios through Community Engagement Program Practice, as 3D Modeler</li>
-                <li>Worked at Research and Development University Contest, as Game Mechanic Programmer</li>
-                <li>Won 3-Title Mention at Spring Stgo. Game Jam</li>
-                <li>Game Exhibition in Festigame 2024</li>
+                <li class="lang_progressList03">Participation in Global Game Jam</li>
+                <li class="lang_progressList04">1st Place Winning in Social Impact Game Jam</li>
+                <li class="lang_progressList05">Worked at GymBro: Idle Clicker, as Background Artist</li>
+                <li class="lang_progressList06">Worked at CienArt Studios through Community Engagement Program Practice, as 3D Modeler</li>
+                <li class="lang_progressList07">Worked at Research and Development University Contest, as Game Mechanic Programmer</li>
+                <li class="lang_progressList08">Won 3-Title Mention at Spring Stgo. Game Jam</li>
+                <li class="lang_progressList09">Game Exhibition in Festigame 2024</li>
+                <br>
                 <h3>2025</h3>
-                <li>Worked at Deadly Crow Games, in "The Midnight Crimes"</li>
+                <li class="lang_progressList10">Worked at Deadly Crow Games, in "The Midnight Crimes"</li>
             </ul>
         </div>
     </section>
     <section id="Games">
-        <h2 style="text-align: center; font-size: 40px; padding-bottom: 1%;">Games</h2>
-        <p style="text-align: center;">Here is a collection of the best games I created and worked on. Feel free to click on them to go to their websites. You can Download and play as well.</p>
+        <h2 class="lang_headerGames" style="text-align: center; font-size: 40px; padding-bottom: 1%;">Games</h2>
+        <p class="lang_gamesSectionOverview" style="text-align: center;">
+            Here is a collection of the best games I created and worked on. Feel free to click on them to go to their websites. You can Download and play as well.
+        </p>
         <div class="container">
         <div style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/gifs/gif_themidnightcrimes-d.gif);" class="game">
             <legend><h3>The Midnight Crimes (2025)</h3></legend>
@@ -76,9 +100,11 @@
                 <div class="tag">Mechanic Designer</div>
                 <div class="tag">Programmer</div>
                 <div class="tag">Unity</div>
-                <p style="padding-top: 2%;">Point and Click, Victorian-Steampunk Narrative Game.</p>
-                <p>I worked designing and implementing point and click mechanics.</p>
-                <a target="_blank" rel="noopener noreferrer" href="https://themidnightcrimes.deadlycrowgames.com"><button>View More</button></a>
+                <p class="lang_gamesDescriptionUpper01" style="padding-top: 2%;">Point and Click, Victorian-Steampunk Narrative Game.</p>
+                <p class="lang_gamesDescriptionLower01">I worked designing and implementing point and click mechanics.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://themidnightcrimes.deadlycrowgames.com">
+                    <button><img src="assets/icons/icon_web-generic.png" alt="visit"></button>
+                </a>
         </div>
         <div style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(assets/gifs/gif_brazodereina-b.gif);" class="game">
             <legend><h3>Brazo de Reina (2024)</h3></legend>
@@ -95,9 +121,11 @@
                 <div class="tag">3D Models</div>
                 <div class="tag">Unity</div>
                 <div class="tag">Programmer</div>
-                <p>Short Mistery Puzzle game, created for the Spring Santiago Game Jam.</p>
-                <p>I worked as the Leader of the team, integrating and structuring my teammates work into the game.</p>
-                <a target="_blank" rel="noopener noreferrer" href="https://gemu-meika.itch.io/brazo-de-reina"><button>View More</button></a>
+                <p class="lang_gamesDescriptionUpper02">Short Mistery Puzzle game, created for the Spring Santiago Game Jam.</p>
+                <p class="lang_gamesDescriptionLower02">I worked as the Leader of the team, integrating and structuring my teammates work into the game.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://gemu-meika.itch.io/brazo-de-reina">
+                    <button><img src="assets/icons/icon_web-generic.png" alt="visit"></button>
+                </a>
         </div>
         <div style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(assets/gifs/gif_ecobridge-b.gif);" class="game">
             <legend><h3>Eco Bridge (2024)</h3></legend>
@@ -112,18 +140,22 @@
                 <div class="tag">3D Modeler</div>
                 <div class="tag">Audio</div>
                 <div class="tag">Unity</div>
-                <p>Ecologic Simulator, created for the Social Impact Game Jam. Shown at Festigame 2024</p>
-                <p>I worked as the Main Animator, as well as making the animal Models, and properly animating them. Aditionally, I made the sound design, as a minor role.</p>
-                <a target="_blank" rel="noopener noreferrer" href="https://flammygamedev.itch.io/eco-bridge"><button>View More</button></a>
+                <p class="lang_gamesDescriptionUpper03">Ecologic Simulator, created for the Social Impact Game Jam. Shown at Festigame 2024</p>
+                <p class="lang_gamesDescriptionLower03">I worked as the Main Animator, as well as making the animal Models, and properly animating them. Aditionally, I made the sound design, as a minor role.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://flammygamedev.itch.io/eco-bridge">
+                    <button><img src="assets/icons/icon_web-generic.png" alt="visit"></button>
+                </a>
         </div>
         <div style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(assets/gifs/gif_gymbroidleclicker-b.gif);" class="game">
             <legend><h3>GymBro: Idle Clicker (2024)</h3></legend>
                 <img id="thumbnail" src="assets/images/game_gymbroidlegym.webp" alt="gymbro-idle-gym">
                 <h4>By SirJaco</h4>
                 <div class="tag">Background Pixel Artist</div>
-                <p>Mobile Fitness Clicker Game.</p>
-                <p>I worked as the game's background pixel artist, making various artworks.</p>
-                <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.jorgecruces.gymbroidlesim"><button>View More</button></a>
+                <p class="lang_gamesDescriptionUpper04">Mobile Fitness Clicker Game.</p>
+                <p class="lang_gamesDescriptionLower04">I worked as the game's background pixel artist, making various artworks.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.jorgecruces.gymbroidlesim">
+                    <button><img src="assets/icons/icon_android.png" alt="visit"></button>
+                </a>
         </div>
         <div style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(assets/gifs/gif_microsoldiers-c.gif);" class="game">
             <legend><h3>Micro Soldiers (2023)</h3></legend>
@@ -133,9 +165,11 @@
                 <div class="tag">Pixel Artist</div>
                 <div class="tag">Programmer</div>
                 <div class="tag">Clickteam Fusion 2.5</div>
-                <p>Arcade Retro Turn Based Tactics.</p>
-                <p>This is one of my legacy games</p>
-                <a target="_blank" rel="noopener noreferrer" href="https://gamejolt.com/games/MICROSOLDIERS/790619"><button>View More</button></a>
+                <p class="lang_gamesDescriptionUpper05">Arcade Retro Turn Based Tactics.</p>
+                <p class="lang_gamesDescriptionLower05">This is one of my legacy games</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://gamejolt.com/games/MICROSOLDIERS/790619">
+                    <button><img src="assets/icons/icon_gamejolt.png" alt="visit"></button>
+                </a>
         </div>
         <div style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(assets/gifs/gif_rcf-b.gif);" class="game">
             <legend><h3>Ranger Commando: Firefight (2021)</h3></legend>
@@ -145,9 +179,11 @@
                 <div class="tag">Pixel Artist</div>
                 <div class="tag">Programmer</div>
                 <div class="tag">Clickteam Fusion 2.5</div>
-                <p>Arcade Retro Rail Shooter.</p>
-                <p>This is one of my legacy games</p>
-                <a target="_blank" rel="noopener noreferrer" href="https://gamejolt.com/games/rcf/628669"><button>View More</button></a>
+                <p class="lang_gamesDescriptionUpper06">Arcade Retro Rail Shooter.</p>
+                <p class="lang_gamesDescriptionLower06">This is one of my legacy games</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://gamejolt.com/games/rcf/628669">
+                    <button><img src="assets/icons/icon_gamejolt.png" alt="visit"></button>
+                </a>
         </div>
         <div style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(assets/gifs/gif_kma-b.gif);" class="game">
             <legend><h3>Kein And Maryu's Adventure (2020)</h3></legend>
@@ -157,9 +193,11 @@
                 <div class="tag">Pixel Artist</div>
                 <div class="tag">Programmer</div>
                 <div class="tag">Clickteam Fusion 2.5</div>
-                <p>Arcade Retro Sidescroll Platformer.</p>
-                <p>This is one of my legacy games</p>
-                <a target="_blank" rel="noopener noreferrer" href="https://gamejolt.com/games/KMA/504681"><button>View More</button></a>
+                <p class="lang_gamesDescriptionUpper07">Arcade Retro Sidescroll Platformer.</p>
+                <p class="lang_gamesDescriptionLower07">This is one of my legacy games</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://gamejolt.com/games/KMA/504681">
+                    <button><img src="assets/icons/icon_gamejolt.png" alt="visit"></button>
+                </a>
         </div>
         <div style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(assets/gifs/gif_hp2-b.gif);" class="game">
             <legend><h3>Hell Prison II</h3></legend>
@@ -169,9 +207,11 @@
                 <div class="tag">Pixel Artist</div>
                 <div class="tag">Programmer</div>
                 <div class="tag">Clickteam Fusion 2.5</div>
-                <p>Short Arcade Retro Stealth Survivor.</p>
-                <p>My First game sequel ever made</p>
-                <a target="_blank" rel="noopener noreferrer" href="https://gamejolt.com/games/HP2/429278"><button>View More</button></a>
+                <p class="lang_gamesDescriptionUpper08">Short Arcade Retro Stealth Survivor.</p>
+                <p class="lang_gamesDescriptionLower08">My First game sequel ever made</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://gamejolt.com/games/HP2/429278">
+                    <button><img src="assets/icons/icon_gamejolt.png" alt="visit"></button>
+                </a>
         </div>
         <div style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(assets/gifs/gif_hp-b.gif);" class="game">
             <legend><h3>Hell Prison</h3></legend>
@@ -181,20 +221,26 @@
                 <div class="tag">Pixel Artist</div>
                 <div class="tag">Programmer</div>
                 <div class="tag">Clickteam Fusion 2.5</div>
-                <p>Short Arcade Retro Stealth Survivor.</p>
-                <p>My First game ever made</p>
-                <a target="_blank" rel="noopener noreferrer" href="https://gamejolt.com/games/h_p_1983/404702"><button>View More</button></a>
+                <p class="lang_gamesDescriptionUpper09">Short Arcade Retro Stealth Survivor.</p>
+                <p class="lang_gamesDescriptionLower09">My First game ever made</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://gamejolt.com/games/h_p_1983/404702">
+                    <button><img src="assets/icons/icon_gamejolt.png" alt="visit"></button>
+                </a>
         </div>
         </div>
     </section>
     <section id="Artwork">
-        <h2 style="padding-bottom: 5%; font-size: 40px;">Artwork</h2>
+        <h2 class="lang_headerGallery" style="padding-bottom: 1%; font-size: 40px;">Gallery</h2>
             <section>
-                <h3>3D Models / Illustrations</h3> <!-- the slideshow script bugs out idk y-->
-                <div style="-webkit-text-fill-color: black;" class="slideshow-container" >
+                <p class="lang_gallerySectionOverview" style="text-align: center;">
+                    Here is a collection of many 3D Models and Digital Illustrations that I've made troughout my studies. Check them out!
+                </p>
+                <br>
+                <div style="background-color: rgba(0, 0, 0, 0.767); padding-top: 2%; padding-bottom: 2%; border-radius: 1%;">
+                    <div style="-webkit-text-fill-color: rgb(255, 255, 255);" class="slideshow-container" >
                     <div class="mySlides fade" style="display: block;">
                         <div class="numbertext">3D Models: 1 / 12</div>
-                        <img src="assets/images/model_barrel.png" style="width:50%">
+                        <img src="assets/images/model_barrel.png" style="width:50%;">
                         <div class="text">Medieval Barrel</div>
                     </div>
                     <div class="mySlides fade">
@@ -294,9 +340,10 @@
                 <span class="dot" onclick="currentSlide(15)"></span>
                 <span class="dot" onclick="currentSlide(16)"></span>
             </div>
+                </div>
             </section>
             <section>
-                <h3 style="padding-bottom: 2%;">3D Animations</h3>
+                <h3 style="padding-bottom: 2%;">3D Animation Reel</h3>
                 <div>
                     <iframe class="player"
                     src="https://www.youtube.com/embed/ySrAM6H6IDo?si=8Glo2FsLGyNgmOgu"
@@ -310,7 +357,7 @@
         </section>
     </section>
     <section id="Awards">
-        <h2 style="font-size: 40px; padding-bottom: 1%;">Awards & Certificates</h2>
+        <h2 class="lang_headerAwards" style="font-size: 40px; padding-bottom: 1%;">Awards & Certificates</h2>
         <div style="padding: 1%;" class="container">
             <div class="award">
             <legend><h3>B2 CEFR English Level Certificate</h3></legend>
@@ -335,8 +382,8 @@
         </div>
     </section>
     <section style="padding-left: 10%; padding-right: 10%; text-align: center; margin: 1%;" id="Contact" >
-        <h2 style="text-align: center; font-size: 40px;">Contact</h2>
-        <p style="padding-bottom: 1%;">Want to talk? Cool! I leave here some channels on which you can reach to me anytime</p>
+        <h2 class="lang_headerContact" style="text-align: center; font-size: 40px;">Contact</h2>
+        <p class="lang_contact" style="padding-bottom: 1%;">Want to talk? Cool! I leave here some channels on which you can reach to me anytime</p>
         <div style="margin: auto;" id="link-to-socials">
             <a target="_blank"
             rel="noopener noreferrer"
@@ -370,5 +417,186 @@
              %0AGracias.&cc=soporte@ejemplo.com">Contactar con ventas</a>-->
         </div>
     </footer>
+    <script>
+        const langEl = document.querySelector('.langwrap');
+        const link = document.querySelectorAll('.langwrap a');
+        //here creates all text variables to be translated
+        const titleEl = document.querySelector('.lang_academictitle');
+        const aboutEl = document.querySelector('.lang_about');
+        const aboutMeEl = document.querySelector('.lang_headerAboutMe');
+        const progressEl = document.querySelector('.lang_headerMyProgress');
+        const progress01El = document.querySelector('.lang_progressList01'); 
+        const progress02El = document.querySelector('.lang_progressList02'); 
+        const progress03El = document.querySelector('.lang_progressList03'); 
+        const progress04El = document.querySelector('.lang_progressList04'); 
+        const progress05El = document.querySelector('.lang_progressList05'); 
+        const progress06El = document.querySelector('.lang_progressList06'); 
+        const progress07El = document.querySelector('.lang_progressList07'); 
+        const progress08El = document.querySelector('.lang_progressList08'); 
+        const progress09El = document.querySelector('.lang_progressList09'); 
+        const progress10El = document.querySelector('.lang_progressList10'); 
+        const games = document.querySelector('.lang_headerGames');
+        const gamesOverview = document.querySelector('.lang_gamesSectionOverview'); 
+        const gamesDescDw01 = document.querySelector('.lang_gamesDescriptionUpper01');
+        const gamesDescDw02 = document.querySelector('.lang_gamesDescriptionUpper02');
+        const gamesDescDw03 = document.querySelector('.lang_gamesDescriptionUpper03');
+        const gamesDescDw04 = document.querySelector('.lang_gamesDescriptionUpper04');
+        const gamesDescDw05 = document.querySelector('.lang_gamesDescriptionUpper05');
+        const gamesDescDw06 = document.querySelector('.lang_gamesDescriptionUpper06');
+        const gamesDescDw07 = document.querySelector('.lang_gamesDescriptionUpper07');
+        const gamesDescDw08 = document.querySelector('.lang_gamesDescriptionUpper08');
+        const gamesDescDw09 = document.querySelector('.lang_gamesDescriptionUpper09');
+        const gamesDescUp01 = document.querySelector('.lang_gamesDescriptionLower01');
+        const gamesDescUp02 = document.querySelector('.lang_gamesDescriptionLower02');
+        const gamesDescUp03 = document.querySelector('.lang_gamesDescriptionLower03');
+        const gamesDescUp04 = document.querySelector('.lang_gamesDescriptionLower04');
+        const gamesDescUp05 = document.querySelector('.lang_gamesDescriptionLower05');
+        const gamesDescUp06 = document.querySelector('.lang_gamesDescriptionLower06');
+        const gamesDescUp07 = document.querySelector('.lang_gamesDescriptionLower07');
+        const gamesDescUp08 = document.querySelector('.lang_gamesDescriptionLower08');
+        const gamesDescUp09 = document.querySelector('.lang_gamesDescriptionLower09');
+        const gallery = document.querySelector('.lang_headerGallery');
+        const galleryOverview = document.querySelector('.lang_gallerySectionOverview');
+        const awards = document.querySelector('.lang_headerAwards');
+        const contact = document.querySelector('.lang_headerContact');
+        const contactDesc = document.querySelector('.lang_contact');
+        link.forEach(el => {
+            el.addEventListener(('click'), () => {
+                langEl.querySelector('.active').classList.remove('active')
+                el.classList.add('active');
+                const attr = el.getAttribute('language');
+                setLanguage(attr);
+            } );
+        });
+        var data = {
+            "english":{
+                "lang_academictitle": "Virtual Reality and Digital Games Design Engineering Student",
+                "lang_about":
+                "Hi, I'm Felipe Cañas Trincado, a Chilean Game Design student and Generalist. I started making and publishing my own games when I was 13 Years old, building passion for designing and creating entertainment through videogames. At 20 years old, I started studying in the Virtual Reality and Digital Games Engineering Program from Universidad Bernardo O'Higgins, and once I decided Making games is my life passion, I didn't stop there. I joined various events, game jams, and conferences about videogames, really getting into the medium, and continuing to expand on knowledge and experience. Here you can visit my greatest projects to date. If you like something, feel free to contact me so we can have some business talk.",
+                "lang_headerAboutMe": "About Me",
+                "lang_headerMyProgress": "My Progress",
+                "lang_progressList01": "Started Career at Universidad Bernardo O higgins",
+                "lang_progressList02": "Game Exhibition at ExpoGame",
+                "lang_progressList03": "Participation in Global Game Jam",
+                "lang_progressList04": "1st Place Winning in Social Impact Game Jam",
+                "lang_progressList05": "Worked at GymBro: Idle Clicker, as Background Artist",
+                "lang_progressList06": "Worked at CienArt Studios through Community Engagement Program Practice, as 3D Modeler",
+                "lang_progressList07": "Worked at Research and Development University Contest, as Game Mechanic Programmer",
+                "lang_progressList08": "Won 3-Title Mention at Spring Stgo. Game Jam",
+                "lang_progressList09": "Game Exhibition in Festigame 2024",
+                "lang_progressList10": "Worked at Deadly Crow Games, in The Midnight Crimes",
+                "lang_headerGames": "Games",
+                "lang_gamesSectionOverview": "Here is a collection of the best games I created and worked on. Feel free to click on them to go to their websites. You can Download and play as well.",
+                "lang_gamesDescriptionUpper01": "I worked designing and implementing point and click mechanics.",
+                "lang_gamesDescriptionLower01": "Point and Click, Victorian-Steampunk Narrative Game.",
+                "lang_gamesDescriptionUpper02": "I worked as the Leader of the team, integrating and structuring my teammates work into the game.",
+                "lang_gamesDescriptionLower02": "Short Mistery Puzzle game, created for the Spring Santiago Game Jam.",
+                "lang_gamesDescriptionUpper03": "I worked as the Main Animator, as well as making the animal Models, and properly animating them. Aditionally, I made the sound design, as a minor role.",
+                "lang_gamesDescriptionLower03": "Ecologic Simulator, created for the Social Impact Game Jam. Shown at Festigame 2024",
+                "lang_gamesDescriptionUpper04": "I worked as the game's background pixel artist, making various artworks.",
+                "lang_gamesDescriptionLower04": "Mobile Fitness Clicker Game.",
+                "lang_gamesDescriptionUpper05": "This is one of my legacy games",
+                "lang_gamesDescriptionLower05": "Arcade Retro Turn Based Tactics.",
+                "lang_gamesDescriptionUpper06": "This is one of my legacy games",
+                "lang_gamesDescriptionLower06": "Arcade Retro Rail Shooter.",
+                "lang_gamesDescriptionUpper07": "This is one of my legacy games",
+                "lang_gamesDescriptionLower07": "Arcade Retro Sidescroll Platformer.",
+                "lang_gamesDescriptionUpper08": "My first ever game sequel",
+                "lang_gamesDescriptionLower08": "Short Arcade Retro Stealth Survivor.",
+                "lang_gamesDescriptionUpper09": "My first game ever made",
+                "lang_gamesDescriptionLower09": "Short Arcade Retro Stealth Survivor.",
+                "lang_headerGallery": "Gallery",
+                "lang_gallerySectionOverview": "Here is a collection of many 3D Models and Digital Illustrations that I've made troughout my studies. Check them out!",
+                "lang_headerAwards": "Awards & Certificates",
+                "lang_headerContact": "Contact",
+                "lang_contact": "Want to talk? Cool! I leave here some channels on which you can reach to me anytime",
+            },
+            "spanish":{
+                "lang_academictitle": "Estudiante de Ingeniería en Realidad Virtual y Diseño de Juegos Digitales",
+                "lang_about":
+                "Hola, soy Felipe Cañas Trincado. Soy Chileno, estudio Diseño de Juegos, y también soy Generalista. Comencé a hacer y publicar mis propios juegos a la edad de 13 años, creando una pasión por diseñar y crear entretenimiento a través de los videojuegos. A la edad de 20 años, Comencé a estudiar en la carrera de Ingeniería en Realidad Virtual y Diseño de Juegos Digitales en la Universidad Bernardo O'Higgins. Así, decidí que hacer videojuegos es la pasión de mi vida, Y por tanto, no me detuve allí. Participé en varios eventos, game jams, y conferencias sobre videojuegos, adentrándome en el medio, y expandiendo mi conocimiento y experiencia. Aquí puedes visitar mis mejores proyectos a la fecha. Si encuentra algo de su agrado, no dude en contactarme, aí podemos tener una charla de negocios.",
+                "lang_headerAboutMe": "Sobre Mí",
+                "lang_headerMyProgress": "Mi Progreso",
+                "lang_progressList01": "Comencé mi carrera en la Universidad Bernardo O'higgins",
+                "lang_progressList02": "Participación en la ExpoGame como expositor",
+                "lang_progressList03": "Participación en la Global Game Jam",
+                "lang_progressList04": "Gané el 1er Lugar en la Social Impact Game Jam",
+                "lang_progressList05": "Trabajé en GymBro: Idle Clicker, como Artista de Fondos",
+                "lang_progressList06": "Trabajé en CienArt Studios mediante un programa de Vinculación con el Medio, como Modelador 3D",
+                "lang_progressList07": "Trabajé en un Concurso Universitario de Investigación más Desarrollo, como Programador de Mecánicas de Juego",
+                "lang_progressList08": "Gané 3 Títulos de Mención en la Game Jam Santiago Primavera",
+                "lang_progressList09": "Participación en la Festigame 2024 como expositor",
+                "lang_progressList10": "Trabajé en Deadly Crow Games, en el juego The Midnight Crimes",
+                "lang_headerGames": "Juegos",
+                "lang_gamesSectionOverview": "Aquí hay una colección de los mejores juegos que he creado y en los que he trabajado. ¡No dudes en visitar sus sitios web! Puedes descargar y jugar también.",
+                "lang_gamesDescriptionUpper01": "Trabajé en diseñar e implementar mecanicas Point and Click",
+                "lang_gamesDescriptionLower01": "Juego Point and Click Narrativo con estética Victoriana-Steampunk",
+                "lang_gamesDescriptionUpper02": "Fuí lider de equipo, integrando y estructurando el trabajo de mis compañeros de equipo en el juego.",
+                "lang_gamesDescriptionLower02": "Juego Corto de Misterio y Puzzles, creado para la Game Jam Santaigo Primavera.",
+                "lang_gamesDescriptionUpper03": "Trabajé como animador principal, así como realicé los modelos de los animales y desarrollé sus animaciones. Adicionalmente, hice diseño de sonido como un rol menor",
+                "lang_gamesDescriptionLower03": "Simulador Ecologico, creado para la Social Impact Game Jam. Mostrado en la Festigame 2024",
+                "lang_gamesDescriptionUpper04": "Trabajé en los fondos del juego como pixel artist, realizando varias piezas.",
+                "lang_gamesDescriptionLower04": "Juego Clicker Móvil de Gimnasios.",
+                "lang_gamesDescriptionUpper05": "Este es uno de mis juegos clásicos",
+                "lang_gamesDescriptionLower05": "Juego Arcade Retro, Tácticas por turnos.",
+                "lang_gamesDescriptionUpper06": "Este es uno de mis juegos clásicos",
+                "lang_gamesDescriptionLower06": "Juego Arcade Retro, de Disparos en Rieles.",
+                "lang_gamesDescriptionUpper07": "Este es uno de mis juegos clásicos",
+                "lang_gamesDescriptionLower07": "Juego Arcade Retro Plataformero.",
+                "lang_gamesDescriptionUpper08": "Mi primera secuela",
+                "lang_gamesDescriptionLower08": "Pequeño Juego Arcade Retro de Supervivencia y Sigilo.",
+                "lang_gamesDescriptionUpper09": "Mi primer juego",
+                "lang_gamesDescriptionLower09": "Pequeño Juego Arcade Retro de Supervivencia y Sigilo.",
+                "lang_headerGallery": "Galería",
+                "lang_gallerySectionOverview": "Esta es una colección de varios de mis Modelos 3D e Ilustraciones Digitales que he hecho a lo largo de mis estudios. ¡Revíselas!",
+                "lang_headerAwards": "Premios y Certificados",
+                "lang_headerContact": "Contacto",
+                "lang_contact": "¿Desea conversar? ¡Genial! Aquí le dejo algunos canales por donde me puede contactar en cualquier momento",
+            }
+        }
+        function setLanguage(attr) {
+            titleEl.textContent = data[attr].lang_academictitle;
+                aboutEl.textContent = data[attr].lang_about;
+                aboutMeEl.textContent = data[attr].lang_headerAboutMe;
+                progressEl.textContent = data[attr].lang_headerMyProgress;
+                progress01El.textContent = data[attr].lang_progressList01;
+                progress02El.textContent = data[attr].lang_progressList02;
+                progress03El.textContent = data[attr].lang_progressList03;
+                progress04El.textContent = data[attr].lang_progressList04;
+                progress05El.textContent = data[attr].lang_progressList05;
+                progress06El.textContent = data[attr].lang_progressList06;
+                progress07El.textContent = data[attr].lang_progressList07;
+                progress08El.textContent = data[attr].lang_progressList08;
+                progress09El.textContent = data[attr].lang_progressList09;
+                progress10El.textContent = data[attr].lang_progressList10;
+                games.textContent = data[attr].lang_headerGames;
+                gamesOverview.textContent = data[attr].lang_gamesSectionOverview;
+                gamesDescUp01.textContent = data[attr].lang_gamesDescriptionUpper01;
+                gamesDescUp02.textContent = data[attr].lang_gamesDescriptionUpper02;
+                gamesDescUp03.textContent = data[attr].lang_gamesDescriptionUpper03;
+                gamesDescUp04.textContent = data[attr].lang_gamesDescriptionUpper04;
+                gamesDescUp05.textContent = data[attr].lang_gamesDescriptionUpper05;
+                gamesDescUp06.textContent = data[attr].lang_gamesDescriptionUpper06;
+                gamesDescUp07.textContent = data[attr].lang_gamesDescriptionUpper07;
+                gamesDescUp08.textContent = data[attr].lang_gamesDescriptionUpper08;
+                gamesDescUp09.textContent = data[attr].lang_gamesDescriptionUpper09;
+                gamesDescDw01.textContent = data[attr].lang_gamesDescriptionLower01;
+                gamesDescDw02.textContent = data[attr].lang_gamesDescriptionLower02;
+                gamesDescDw03.textContent = data[attr].lang_gamesDescriptionLower03;
+                gamesDescDw04.textContent = data[attr].lang_gamesDescriptionLower04;
+                gamesDescDw05.textContent = data[attr].lang_gamesDescriptionLower05;
+                gamesDescDw06.textContent = data[attr].lang_gamesDescriptionLower06;
+                gamesDescDw07.textContent = data[attr].lang_gamesDescriptionLower07;
+                gamesDescDw08.textContent = data[attr].lang_gamesDescriptionLower08;
+                gamesDescDw09.textContent = data[attr].lang_gamesDescriptionLower09;
+                gallery.textContent = data[attr].lang_headerGallery;
+                galleryOverview.textContent = data[attr].lang_gallerySectionOverview;
+                awards.textContent = data[attr].lang_headerAwards;
+                contact.textContent = data[attr].lang_headerContact;
+                contactDesc.textContent = data[attr].lang_contact;
+
+        }
+        document.onload = setLanguage("english"); //sets language on english by default when loading site
+    </script>
 </body>
 </html>

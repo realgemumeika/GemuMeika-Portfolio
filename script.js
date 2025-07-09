@@ -22,3 +22,16 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+function detectDesktopOnMobile(){
+  const message = document.getElementById('desktopModeMessage');
+  const isMobileDevice = window.innerWidth <= 900;
+  const userAgent = navigator.userAgent.toLowerCase();
+  const isMobileBrowser = /android|iphone|ipad|ipod|blackberry|windows phone/g.test(userAgent);
+  if (isMobileDevice && !mobi|android|iphone/i.test(userAgent) || (isMobileBrowser && window.innerWidth > screen.width * 0.9)){
+    message.style.display = 'block';
+  } else {
+    message.style.display = 'none';
+  }
+}
+window.addEventListener('load', detectDesktopOnMobile);
+window.addEventListener('resize', detectDesktopOnMobile);
