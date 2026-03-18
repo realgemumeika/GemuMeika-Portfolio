@@ -78,6 +78,7 @@
                 <br>
                 <h3>2025</h3>
                 <li class="lang_progressList10">Worked at Deadly Crow Games, in "The Midnight Crimes"</li>
+                <li class="lang_progressList10">Started my Professional Practice at IguanaBee, at the end of 2025 and the beggining of 2026.</li>
             </ul>
         </div>
     </section>
@@ -87,6 +88,20 @@
             Here is a collection of the best games I created and worked on. Feel free to click on them to go to their websites. You can Download and play as well.
         </p>
         <div class="container">
+            <div style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/gifs/gif_giftwrappanic-d.gif);" class="game">
+            <legend><h3>Gift Wrap Panic (2025)</h3></legend>
+                <img id="thumbnail" src="assets/images/game_giftwrappanic.png" alt="the-midnight-crimes">
+                <br>
+                <img id="logo" src="assets/images/logo_iguanabee-c.png" alt="deadlycrowgames">
+                <div class="tag">Game Designer</div>
+                <div class="tag">Programmer</div>
+                <div class="tag">Unity</div>
+                <p class="lang_gamesDescriptionUpper00" style="padding-top: 2%;">Short Merging WEB Game.</p>
+                <p class="lang_gamesDescriptionLower00">I was tasked to do almost the 90% of the game 3 days before Christmas.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://iguanabee.itch.io/xmass-gift-wrap-panic">
+                    <button><img src="assets/icons/icon_itchio.png" alt="visit"></button>
+                </a>
+        </div>
         <div style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/gifs/gif_themidnightcrimes-d.gif);" class="game">
             <legend><h3>The Midnight Crimes (2025)</h3></legend>
                 <img id="thumbnail" src="assets/images/game_themidnightcrimes-b.jpg" alt="the-midnight-crimes">
@@ -102,8 +117,8 @@
                 <div class="tag">Unity</div>
                 <p class="lang_gamesDescriptionUpper01" style="padding-top: 2%;">Point and Click, Victorian-Steampunk Narrative Game.</p>
                 <p class="lang_gamesDescriptionLower01">I worked designing and implementing point and click mechanics.</p>
-                <a target="_blank" rel="noopener noreferrer" href="https://themidnightcrimes.deadlycrowgames.com">
-                    <button><img src="assets/icons/icon_web-generic.png" alt="visit"></button>
+                <a target="_blank" rel="noopener noreferrer" href="https://store.steampowered.com/app/2277870/The_Midnight_Crimes/">
+                    <button><img src="assets/icons/icon_steam.png" alt="visit"></button>
                 </a>
         </div>
         <div style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(assets/gifs/gif_brazodereina-b.gif);" class="game">
@@ -124,7 +139,7 @@
                 <p class="lang_gamesDescriptionUpper02">Short Mistery Puzzle game, created for the Spring Santiago Game Jam.</p>
                 <p class="lang_gamesDescriptionLower02">I worked as the Leader of the team, integrating and structuring my teammates work into the game.</p>
                 <a target="_blank" rel="noopener noreferrer" href="https://gemu-meika.itch.io/brazo-de-reina">
-                    <button><img src="assets/icons/icon_web-generic.png" alt="visit"></button>
+                    <button><img src="assets/icons/icon_itchio.png" alt="visit"></button>
                 </a>
         </div>
         <div style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(assets/gifs/gif_ecobridge-b.gif);" class="game">
@@ -143,7 +158,7 @@
                 <p class="lang_gamesDescriptionUpper03">Ecologic Simulator, created for the Social Impact Game Jam. Shown at Festigame 2024</p>
                 <p class="lang_gamesDescriptionLower03">I worked as the Main Animator, as well as making the animal Models, and properly animating them. Aditionally, I made the sound design, as a minor role.</p>
                 <a target="_blank" rel="noopener noreferrer" href="https://flammygamedev.itch.io/eco-bridge">
-                    <button><img src="assets/icons/icon_web-generic.png" alt="visit"></button>
+                    <button><img src="assets/icons/icon_itchio.png" alt="visit"></button>
                 </a>
         </div>
         <div style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(assets/gifs/gif_gymbroidleclicker-b.gif);" class="game">
@@ -438,6 +453,7 @@
         const progress10El = document.querySelector('.lang_progressList10'); 
         const games = document.querySelector('.lang_headerGames');
         const gamesOverview = document.querySelector('.lang_gamesSectionOverview'); 
+        const gamesDescDw00 = document.querySelector('.lang_gamesDescriptionUpper00');
         const gamesDescDw01 = document.querySelector('.lang_gamesDescriptionUpper01');
         const gamesDescDw02 = document.querySelector('.lang_gamesDescriptionUpper02');
         const gamesDescDw03 = document.querySelector('.lang_gamesDescriptionUpper03');
@@ -447,6 +463,7 @@
         const gamesDescDw07 = document.querySelector('.lang_gamesDescriptionUpper07');
         const gamesDescDw08 = document.querySelector('.lang_gamesDescriptionUpper08');
         const gamesDescDw09 = document.querySelector('.lang_gamesDescriptionUpper09');
+        const gamesDescUp00 = document.querySelector('.lang_gamesDescriptionLower00');
         const gamesDescUp01 = document.querySelector('.lang_gamesDescriptionLower01');
         const gamesDescUp02 = document.querySelector('.lang_gamesDescriptionLower02');
         const gamesDescUp03 = document.querySelector('.lang_gamesDescriptionLower03');
@@ -488,6 +505,8 @@
                 "lang_progressList10": "Worked at Deadly Crow Games, in The Midnight Crimes",
                 "lang_headerGames": "Games",
                 "lang_gamesSectionOverview": "Here is a collection of the best games I created and worked on. Feel free to click on them to go to their websites. You can Download and play as well.",
+                "lang_gamesDescriptionUpper00": "I was tasked with making the full game 3 days before Christmas.",
+                "lang_gamesDescriptionLower00": "Short WEB Merging Game.",
                 "lang_gamesDescriptionUpper01": "I worked designing and implementing point and click mechanics.",
                 "lang_gamesDescriptionLower01": "Point and Click, Victorian-Steampunk Narrative Game.",
                 "lang_gamesDescriptionUpper02": "I worked as the Leader of the team, integrating and structuring my teammates work into the game.",
@@ -530,6 +549,8 @@
                 "lang_progressList10": "Trabajé en Deadly Crow Games, en el juego The Midnight Crimes",
                 "lang_headerGames": "Juegos",
                 "lang_gamesSectionOverview": "Aquí hay una colección de los mejores juegos que he creado y en los que he trabajado. ¡No dudes en visitar sus sitios web! Puedes descargar y jugar también.",
+                "lang_gamesDescriptionUpper00": "Me encargaron desarrollar el juego completo 3 dias antes de Navidad.",
+                "lang_gamesDescriptionLower00": "Juego WEB de Fusionar Objetos.",
                 "lang_gamesDescriptionUpper01": "Trabajé en diseñar e implementar mecanicas Point and Click",
                 "lang_gamesDescriptionLower01": "Juego Point and Click Narrativo con estética Victoriana-Steampunk",
                 "lang_gamesDescriptionUpper02": "Fuí lider de equipo, integrando y estructurando el trabajo de mis compañeros de equipo en el juego.",
@@ -572,6 +593,7 @@
                 progress10El.textContent = data[attr].lang_progressList10;
                 games.textContent = data[attr].lang_headerGames;
                 gamesOverview.textContent = data[attr].lang_gamesSectionOverview;
+                gamesDescUp00.textContent = data[attr].lang_gamesDescriptionUpper00;
                 gamesDescUp01.textContent = data[attr].lang_gamesDescriptionUpper01;
                 gamesDescUp02.textContent = data[attr].lang_gamesDescriptionUpper02;
                 gamesDescUp03.textContent = data[attr].lang_gamesDescriptionUpper03;
@@ -581,6 +603,7 @@
                 gamesDescUp07.textContent = data[attr].lang_gamesDescriptionUpper07;
                 gamesDescUp08.textContent = data[attr].lang_gamesDescriptionUpper08;
                 gamesDescUp09.textContent = data[attr].lang_gamesDescriptionUpper09;
+                gamesDescDw00.textContent = data[attr].lang_gamesDescriptionLower00;
                 gamesDescDw01.textContent = data[attr].lang_gamesDescriptionLower01;
                 gamesDescDw02.textContent = data[attr].lang_gamesDescriptionLower02;
                 gamesDescDw03.textContent = data[attr].lang_gamesDescriptionLower03;
